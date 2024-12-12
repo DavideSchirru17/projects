@@ -14,12 +14,18 @@ const buttonQuote = document.querySelector('button');
 const soundBtn = document.querySelector('.sound'); 
 const copyBtn = document.querySelector('.copy'); 
 
+let lastQuoteIndex = -1;
 
 buttonQuote.addEventListener('click', function(){ // function write on the DOM a quote 
-          const randomIndex = Math.floor(Math.random() * arrayQuotes.length); 
-          const randomQuote = arrayQuotes[randomIndex]; 
-          quoteIdSection.innerHTML = randomQuote.quote; 
-          authorIdSection.innerHTML = randomQuote.author; 
+ let randomIndex = Math.floor(Math.random() * arrayQuotes.length);
+
+  if (randomIndex === lastQuoteIndex) {
+      randomIndex = (randomIndex + 1) % arrayQuotes.length;
+  }
+  
+   const randomQuote = arrayQuotes[randomIndex]; 
+   quoteIdSection.innerHTML = randomQuote.quote; 
+   authorIdSection.innerHTML = randomQuote.author; 
     }
 )
  
