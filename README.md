@@ -19,9 +19,6 @@ The third button opens a new Twitter page, making it easy to share the quote wit
 4. **Data Validation**
 Ensures that no quote is repeated consecutively when generating new quotes.
 
-5. **Thankyou message**
-Displays a thank-you message to the user after successfully copying a quote to the clipboard.
-
 ------------------------------------------------------------------------------------------------------------------
 
 **TECHNOLOGIES USED**
@@ -64,6 +61,7 @@ RandomGeneratorQuote/
 
  **Future Enhancements**
 
+- Displays a thank-you message to the user after successfully copying a quote to the clipboard.
 - Integrate an external API to fetch real-time quotes.
 - Add more customization options, such as themes and font styles.
 - Implement user-generated quotes with local storage.
