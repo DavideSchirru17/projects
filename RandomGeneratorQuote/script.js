@@ -11,11 +11,11 @@ const arrayQuotes = [{quote:'" To live is the rarest thing in the world. Most pe
 const quoteIdSection = document.getElementById('quote'); 
 const authorIdSection = document.getElementById('author'); 
 const buttonQuote = document.querySelector('button');  
-const sountBtn = document.querySelector('.sound'); 
+const soundBtn = document.querySelector('.sound'); 
 const copyBtn = document.querySelector('.copy'); 
 
 
-buttonQuote.addEventListener('click', function(){ // function write quote DOM
+buttonQuote.addEventListener('click', function(){ // function write on the DOM a quote 
           const randomIndex = Math.floor(Math.random() * arrayQuotes.length); 
           const randomQuote = arrayQuotes[randomIndex]; 
           quoteIdSection.innerHTML = randomQuote.quote; 
@@ -23,14 +23,14 @@ buttonQuote.addEventListener('click', function(){ // function write quote DOM
     }
 )
  
-sountBtn.addEventListener('click', function(){ // fx reading text and speach
+soundBtn.addEventListener('click', function(){ // fx reading text from the DOM and convert it to speech 
   const quoteText = quoteIdSection.innerHTML; 
   const authorText = authorIdSection.innerHTML; 
   let utterance = new SpeechSynthesisUtterance(`${quoteText} by ${authorText}`); 
   speechSynthesis.speak(utterance); // window object speak reading method
 })
 
-copyBtn.addEventListener('click', ()=>{
+copyBtn.addEventListener('click', ()=>{ // fx copy from the quote 
   const quote = quoteIdSection.innerText; 
   const author = authorIdSection.innerText; 
   const fullText = `${quote} ${author}`; 
