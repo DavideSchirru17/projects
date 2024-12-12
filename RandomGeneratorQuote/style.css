@@ -6,11 +6,13 @@
 }
 #quote{
    text-align: center;
-   height: 3rem;
+   height: 4rem;
+   font-style: italic;
 }
 #author{
     text-align: end;
     margin-right: 1rem;
+    font-weight: 600;
 }
 
 #iconContainer{
@@ -56,6 +58,8 @@
     border-radius: 30px;
     cursor: pointer;
     transition: 0.5s;
+    margin-right: 0.5rem;
+
 }
 .icon:hover{
     background-color: lightgray;
