@@ -69,6 +69,7 @@ RandomGeneratorQuote/
 ------------------------------------------------------------------------------------------------------------------
  **License**
 This project is licensed under the JUST IT license. You are free to use and modify it for personal purposes. 
+license 
 
 
 
