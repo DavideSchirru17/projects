@@ -34,25 +34,10 @@ ul[role='list'], ol[role='list']{
     list-style: none;
 }
 
-p{
-    font-weight: 600;
-}
-
 #inputNumber::-webkit-outer-spin-button, 
 #inputNumber::-webkit-inner-spin-button{
     -webkit-appearance: none; 
     margin:0; 
-}
-.whiteBackground{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: white;
-    height: 50vh;
-    width: 50vh;
-    border-radius: 10px;
-    padding: 1rem;
 }
 #form{
     display: flex;
@@ -63,13 +48,16 @@ p{
 }
 
 #inputNumber{
-color: #595cff;
-font-weight: 600;
-font-size: 1.5rem;
-width: 3rem;
-height: 3rem;
-text-align: center;
-
+    color: #595cff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    width: 5rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid  #595cff;
+    overflow: scroll;
+    
 }
 
 #buttonPink{
@@ -79,4 +67,30 @@ text-align: center;
     width: 5rem;
     height: 2rem;
     border-radius: 10px;
+    cursor: pointer;
+    
+}
+#list{
+    max-width: 100px;
+    overflow: scroll;
+
+}
+#reset{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.whiteBackground{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 10px;
+    padding: 1rem;
 }

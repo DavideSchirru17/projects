@@ -11,22 +11,24 @@
 <body>
     <h1>GUESS NUMBER GAME</h1>
     <section class="whiteBackground">
-        <p id="queryTitle">Think of a number between 1 - 100</p>
-        <p>Can you guess it?</p>
+        <h4 id="queryTitle">Think of a number between 1 - 100</h4>
+        <h4>Can you guess it?</h4>
         <div id="formContainer">
             <form action="" method="get" id="form">
-                <input id="inputNumber" type="number" />
+                <input id="inputNumber" type="number" placeholder="Num" />
                 <button id="buttonPink" type="submit">GUESS</button>
             </form>
         </div>
-        <p class="feedback">Feedback with answer done by the computer</p>
-        <div class="ifElse">
-            write here if too high 
-            write here if too low 
-            write here if is correct , congratulation and back ground green 
+        <h4 class="feedback"><i>Feedback with answer done by the computer</i></h4>
+        <div id="msg1">
+            <p>Random computer answer</p>
         </div>
-        <div class="userNumberSelected">The number selected was: </div>
-        <div class="arrayNumbersChoosen">List of numbers you selected: </div>
+        <div id="msg2"><p>The numbers selected were:</p><div id="list"></div> </div>
+        <div id="msg3"><p>3 How many times you tried to guess the number? </p>
+            <div id="counter"></div>  </div>
+</section>
+<section id="buttonContainer">
+    <button id="reset">RESET</button>
 </section>
 </body>
 </html>
