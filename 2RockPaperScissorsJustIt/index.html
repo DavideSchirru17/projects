@@ -3,11 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <h1 id="title">Rock Paper Scissors</h1>
+    <details id="details">
+        <summary>Rules of the game </summary>
+        <p>You will be playing against the computer.</p>
+        <p>You can choose between Rock, Paper and Scissors.</p>
+        <p>The first one to 3 ponts wins.</p>
+        <p>Here are the rules to getting a point in the game:</p>
+        <ul>
+            <li>Rock beats Scissors</li>
+            <li>Scissors beats Paper</li>
+            <li>Paper beats Rocks</li>
+        </ul>
+        <p>If the player and computer choose the same option, no one get the point.</p>
+    </details>
+    <div id="playerComputerContainer">
+        <h3>Player score: <span>1</span></h3>
+        <h3>Computer score: <span>0</span></h3>
+    </div>
+    <section id="chooseOptions">
+        <h1 id="titleOptions">Choose an option:</h1>
+        <div id="containerButtons">
+       <button class="btn" id="rockBtn">Rock</button>
+       <button class="btn" id="paperBtn">Paper</button>
+       <button class="btn" id="scissorsBtn">Scissors</button>
+    </div>
+    </section>
+    <section id="messageWhoWin">Player wins! Rock beats Scissors</section>
+    <button class="btn" id="resetGame">Play again?</button>
 </body>
 </html>

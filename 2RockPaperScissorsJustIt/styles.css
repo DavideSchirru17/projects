@@ -1,0 +1,72 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    text-align: center;
+    line-height: 1.5;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: cornflowerblue;
+}
+img, picture, video, canvas {
+    display: block;
+    max-width: 100%;
+}
+button, input, textarea, select {
+    font: inherit;
+    color: inherit;
+}
+textarea {
+    resize: none;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.btn{
+    width: 5rem;
+    height: 5rem;
+    box-shadow: 10px 5px 5px;
+    cursor: pointer;
+
+}
+#title{
+color: white;
+}
+#details{
+    background-color: white;
+    border: solid 5px goldenrod;
+    border-radius: 10px;
+}
+#playerComputerContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+#titleOptions{
+    color: white;
+}
+#containerButtons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+#messageWhoWin{
+    display: none;
+}
+#resetGame{
+    border-radius: 40px;
+    display: none;
+}
+
